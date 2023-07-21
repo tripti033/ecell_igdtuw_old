@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fbd694;
+    color : #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    text-decoration-line: underline;
+}
+
+ul {
+    list-style: none;
+}
+  
+.clear {
+    clear: left;
+}
+
+.container {
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 48px;
+    margin-left: 20px;
+}
+
+.fa {
+    margin-right: 5px;
+
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.nav {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list {
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+}
+  
+.nav-link {
+    padding: 12px 12px;
+    color: #fff;
+    transition: all 0.5s ease;
+}
+  
+.nav-close {
+    display: none;
+    position: absolute;
+    top: 16px;
+    right: 24px;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.nav-toggle {
+    display: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.nav-link:hover {
+    text-decoration: none;
+    color: #585585;
+    border-radius: 200px;
+    background-color: #fff;
+    transition: background-color 0.5s ease;
+}
+
+.nav-link-active {
+    text-decoration: none;
+    color: #585585;
+    border-radius: 200px;
+    background-color: #fff;
+    transition: background-color 0.5s ease;
+}
+
+.nav-link-scrolling {
+    background-color: #585585;
+    transition: background-color .5s ease;
+}
+
+.top-wrapper {
+    background-color: black;
+    padding: 180px 0 230px 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(../img/background.png);
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    text-align: center;
+}
+
+.top-wrapper h1 {
+    font-size: 45px;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+}
+
+.top-wrapper h2 {
+    font-size: 35px;
+    letter-spacing: 5px;
+    margin-top: 50px;
+}
+
+.top-wrapper p {
+    margin-bottom: 3px;
+}
+
+.wavy-text span {
+    position: relative;
+    display: inline-block;
+    animation: animate 2s ease-in-out infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(10px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+.thumbnail {
+    border: 2px solid black;
+    transition: all 0.5s ease-in-out;
+}
+
+.thumbnail:hover {
+    width: 60%;
+    height: 60%;
+    transition: all 0.5s ease-in-out;
+}
+
+.rundown-wrapper {
+    padding-bottom: 100px;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+.heading {
+    padding-top: 80px;
+    color: #5f5d60;
+}
+
+.rundowns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.rundown {
+    width: 25%;
+}
+
+.rundown h3 {
+    padding-top: 50px;
+    color: #5f5d60;
+}
+
+.text-contents {
+    width: 80%;
+    display: inline-block;
+    margin-top: 30px;
+    font-size: 15px;
+    color: #b3aeb5;
+}
+
+.docs-wrapper {
+    padding-bottom: 80px;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes fading {
+    0% {
+        background-image: url(../img/2.jpeg);
+    }
+    25% {
+        background-image: url(../img/3.png);
+    }
+    50% {
+        background-image: url(../img/5.jpeg);
+    }
+    75% {
+        background-image: url(../img/6.jpeg);
+    }
+    100% {
+        background-image: url(../img/8.jpeg);
+    }
+}
+
+.slideshow{
+    background-image: url(../img/1.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+    width: 800px;
+    margin-top: 50px;
+    border-radius: 25px;
+    transition: 5s;
+    animation-name: fading;
+    animation-direction: alternate-reverse;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+    animation-duration: 20s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+.about-wrapper {
+    padding-bottom: 80px;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+    background-color: #f7f7f7;
+}
+
+.about-contents {
+    display: inline-block;
+    font-size: 15px;
+    color: #5f5d60;
+}
+
+footer {
+    color: #b3aeb5;
+    font-size: 12px;
+    background-color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: #b3aeb5;
+}
